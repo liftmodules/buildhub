@@ -8,7 +8,8 @@ object LiftModulesBuildAll extends Build {
 	// Git "read-only" URLs appear to be the ones to use here:
 	lazy val modules: Seq[ProjectReference] = List(
 		//uri("git://github.com/d6y/liftmodules-googleanalytics.git"),
-		uri("git://github.com/liftmodules/paypal.git")
+		uri("git://github.com/liftmodules/paypal.git"),
+		uri("git://github.com/liftmodules/widgets.git")
 		)
 	
 	// Override the version of Lift and publish settings for all modules being built:
