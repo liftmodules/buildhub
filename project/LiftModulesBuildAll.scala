@@ -15,7 +15,8 @@ object LiftModulesBuildAll extends Build {
 		uri("git://github.com/liftmodules/jta.git"),
 		uri("git://github.com/liftmodules/machine.git"),
 		uri("git://github.com/liftmodules/oauth.git"),
-		uri("git://github.com/liftmodules/oauth-mapper.git"),
+		// NB: oauth-mapper build is triggered by a build of oauth and this build, so no need to include it here
+		// uri("git://github.com/liftmodules/oauth-mapper.git"),
 		uri("git://github.com/liftmodules/openid.git"),
 		uri("git://github.com/liftmodules/scalate.git"),
 		uri("git://github.com/liftmodules/textile.git"),
