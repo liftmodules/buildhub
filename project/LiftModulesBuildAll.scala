@@ -7,9 +7,21 @@ object LiftModulesBuildAll extends Build {
 	
 	// Git "read-only" URLs appear to be the ones to use here:
 	lazy val modules: Seq[ProjectReference] = List(
-		//uri("git://github.com/d6y/liftmodules-googleanalytics.git"),
 		uri("git://github.com/liftmodules/paypal.git"),
-		uri("git://github.com/liftmodules/widgets.git")
+		uri("git://github.com/liftmodules/widgets.git"),
+		uri("git://github.com/liftmodules/amqp.git"),
+		uri("git://github.com/liftmodules/facebook.git"),
+		uri("git://github.com/liftmodules/imaging.git"),
+		uri("git://github.com/liftmodules/jta.git"),
+		uri("git://github.com/liftmodules/machine.git"),
+		uri("git://github.com/liftmodules/oauth.git"),
+		uri("git://github.com/liftmodules/oauth-mapper.git"),
+		uri("git://github.com/liftmodules/openid.git"),
+		uri("git://github.com/liftmodules/scalate.git"),
+		uri("git://github.com/liftmodules/textile.git"),
+		uri("git://github.com/liftmodules/xmpp.git")
+		//uri("git://github.com/d6y/liftmodules-googleanalytics.git")
+		//uri("git://github.com/d6y/liftmodules-imap-idle.git")
 		)
 	
 	// Override the version of Lift and publish settings for all modules being built:
