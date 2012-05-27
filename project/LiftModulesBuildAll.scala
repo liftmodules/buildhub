@@ -28,7 +28,7 @@ object LiftModulesBuildAll extends Build {
 	// Override the version of Lift and publish settings for all modules being built:
 	lazy val moduleSettings: Seq[Setting[_]] = modules.flatMap { module => List( 
 		liftVersion in module := "2.5-SNAPSHOT",
-		resolvers in module += ScalaToolsSnapshots,
+		resolvers in module +=  "Central snapshot" at "https://oss.sonatype.org/content/repositories/snapshots/",
 		publishTo in module := Some("snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"),
 		credentials in module += Credentials( file("/private/liftmodules/sonatype.credentials") )
 		)
