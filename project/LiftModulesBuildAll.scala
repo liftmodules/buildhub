@@ -21,7 +21,7 @@ object LiftModulesBuildAll extends Build {
 		uri("git://github.com/liftmodules/scalate.git"),
 		uri("git://github.com/liftmodules/textile.git"),
 		uri("git://github.com/liftmodules/xmpp.git")
-		uri("git://github.com/d6y/liftmodules-googleanalytics.git")
+		//uri("git://github.com/d6y/liftmodules-googleanalytics.git")
 		//uri("git://github.com/d6y/liftmodules-imap-idle.git")
 		)
 	
