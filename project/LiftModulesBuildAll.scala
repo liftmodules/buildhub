@@ -20,7 +20,8 @@ object LiftModulesBuildAll extends Build {
 		uri("git://github.com/liftmodules/openid.git"),
 		uri("git://github.com/liftmodules/scalate.git"),
 		uri("git://github.com/liftmodules/textile.git"),
-		uri("git://github.com/liftmodules/xmpp.git")
+		uri("git://github.com/liftmodules/xmpp.git"),
+		uri("git://github.com/karma4u101/lift-jquery-module.git")
 		//uri("git://github.com/d6y/liftmodules-googleanalytics.git")
 		//uri("git://github.com/d6y/liftmodules-imap-idle.git")
 		)
@@ -38,7 +39,7 @@ object LiftModulesBuildAll extends Build {
 		credentials in module += Credentials( file("/private/liftmodules/sonatype.credentials") )
 		)
 
-	lazy val moduleSettings: Seq[Setting[_]] = modules.flatMap(setting)
+  lazy val moduleSettings: Seq[Setting[_]] = modules.flatMap(setting)
 
   lazy val first = Project(id = "first", base = file(".")).
   	aggregate(modules:_*).
